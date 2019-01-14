@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
 const INITIAL_NEWS_STATE = ""
-function news(state = INITIAL_NEWS_STATE, action) {
+function content(state = INITIAL_NEWS_STATE, action) {
   switch (action.type) {
     case "RECEIVE_CONTENT":
       return action.content
