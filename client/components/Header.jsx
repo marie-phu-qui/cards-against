@@ -5,7 +5,7 @@ const Header = props => {
       <div className="container-header">
         <div id='header'>
           <h1>
-              REACT API BOILERPLATE
+              REACT REDUX API BOILERPLATE
           </h1>
         </div>
       </div>
