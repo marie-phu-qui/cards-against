@@ -1,0 +1,51 @@
+{
+  "name": "boilerplate-react-API",
+  "version": "1.0.0",
+  "description": "react 16, webpack 4, API ready to go",
+  "main": "index.js",
+  "repository": "https://github.com/marie-phu-qui/boilerplate-react-API.git",
+  "author": "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server",
+    "postinstall": "webpack",
+    "build": "webpack --watch",
+    "dev": "nodemon server",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "setupFiles": [
+      "./tests/setup-env.js"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "superagent": "^4.1.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "react": "^16.7.0",
+    "supertest": "^3.3.0"
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge"
+  }
+}
