@@ -1,1 +1,3 @@
-# BOILERPLATE API ready
+# Cards Against Humanity,
+## A SQL project
+
