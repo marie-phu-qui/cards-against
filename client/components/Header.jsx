@@ -5,7 +5,7 @@ const Header = props => {
       <div className="container-header">
         <div id='header'>
           <h1>
-              REACT REDUX API BOILERPLATE
+              CARDS AGAINST HUMANITY
           </h1>
         </div>
       </div>

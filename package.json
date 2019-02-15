@@ -56,5 +56,6 @@
   },
   "resolutions": {
     "babel-core": "^7.0.0-bridge"
-  }
+  },
+  "author": "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>"
 }

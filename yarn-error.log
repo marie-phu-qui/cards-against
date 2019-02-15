@@ -33,7 +33,10 @@ npm manifest:
     "description": "",
     "main": "index.js",
     "repository": "https://github.com/marie-phu-qui/cards-against.git",
-    "author": "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>",
+    "contributors": [
+      "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>",
+      "lianna-blanca <>"
+    ],
     "license": "MIT",
     "scripts": {
       "start": "node server",
