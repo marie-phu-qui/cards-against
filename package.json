@@ -1,10 +1,13 @@
 {
-  "name": "boilerplate-react-API",
+  "name": "cards-against",
   "version": "1.0.0",
-  "description": "react 16, webpack 4, API ready to go",
+  "description": "",
   "main": "index.js",
-  "repository": "https://github.com/marie-phu-qui/boilerplate-react-API.git",
-  "author": "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>",
+  "repository": "https://github.com/marie-phu-qui/cards-against.git",
+  "contributors": [
+    "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>",
+    "lianna-blanca <>"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "node server",
