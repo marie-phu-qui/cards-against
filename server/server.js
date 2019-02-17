@@ -7,7 +7,11 @@ server.use(express.json())
 
 
 server.get('/test', (req, res) => {
-res.send('test test test test')
+    res.send('test test test test')
+})
+
+server.get('/game', (req, res) => {
+    res.send('this will display the game plateform')
 })
 
 
