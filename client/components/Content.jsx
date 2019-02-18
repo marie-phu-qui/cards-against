@@ -1,6 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 
 import Rules from './Rules';
 import Game from './Game';
@@ -9,7 +7,7 @@ class Content extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      display: false
+      displayRules: false
     }
     this.handleToggle = this.handleToggle.bind(this)
   }
@@ -19,13 +17,13 @@ class Content extends React.Component {
     console.log(this.state);
     return(
       this.setState({
-        display: !this.state.display
+        displayRules: !this.state.displayRules
       })
     )
   }
   render(){
   return (
-    <Router>
+    <div>
       <div> 
         <h4 className="text-success">Game on !</h4>
         <p>
@@ -34,17 +32,17 @@ class Content extends React.Component {
 
         <div id='game' className="text-success">
           <h4>
-            <Link lassName="text-success" to="/game">Click to START</Link>
+          <a href='/game'>Enter the game</a>
           </h4>
         </div>
 
         <div onClick={this.handleToggle}>
-        <a id='rules' className="text-success" href='/'>See the rules</a>{this.state.display && <Rules />}
+        <a id='rules' className="text-success" href='/'>See the rules</a>{this.state.displayRules && <Rules />}
         </div>
 
-        <Route exact path="/game" render={() => <Game />} />
+        
       </div>
-    </Router>
+    </div>
 
   );
   }
