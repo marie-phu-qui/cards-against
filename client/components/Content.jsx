@@ -9,19 +9,17 @@ class Content extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      display: {}
+      display: false
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.handleToggle = this.handleToggle.bind(this)
   }
-  handleClick(e) {
+  handleToggle(e) {
     e.preventDefault();
-    console.log('Display the clicked component !');
+    console.log('Toggle the component !');
     console.log(this.state);
     return(
       this.setState({
-        display: {
-          'rules' : true,
-        }
+        display: !this.state.display
       })
     )
   }
@@ -31,17 +29,17 @@ class Content extends React.Component {
       <div> 
         <h4 className="text-success">Game on !</h4>
         <p>
-        Play cards against humanity, because it is fun. But you is funnier ? You ? or the computer ?
+        Play cards against humanitys, because it is fun. But you is funnier ? You ? or the computer ?
         </p>
 
         <div id='game' className="text-success">
           <h4>
-            <Link to="/game">Click to START</Link>
+            <Link lassName="text-success" to="/game">Click to START</Link>
           </h4>
         </div>
 
-        <div onClick={this.handleClick}>
-        <a id='rules' className="text-success" href='/'>See the rules</a>{this.state.display.rules == true && <Rules />}
+        <div onClick={this.handleToggle}>
+        <a id='rules' className="text-success" href='/'>See the rules</a>{this.state.display && <Rules />}
         </div>
 
         <Route exact path="/game" render={() => <Game />} />
